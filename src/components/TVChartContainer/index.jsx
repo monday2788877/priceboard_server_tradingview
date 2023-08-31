@@ -53,15 +53,8 @@ export const TVChartContainer = () => {
 			autosize: defaultProps.autosize,
 			studies_overrides: defaultProps.studiesOverrides,
 			 timezone: "Asia/Bangkok",
-			      theme: getParameterByName('theme'),
-                overrides: {
-                    "mainSeriesProperties.candleStyle.wickUpColor": "#225437",
-                    "mainSeriesProperties.candleStyle.wickDownColor": "#5A1913",
-                    "mainSeriesProperties.candleStyle.borderUpColor": "#225437",
-                    "mainSeriesProperties.candleStyle.borderDownColor": "#5A1913",
-                    "mainSeriesProperties.candleStyle.upColor": "#00CA73",
-                    "mainSeriesProperties.candleStyle.downColor": "#FF6960"
-                },
+			      theme: getParameterByName('theme')|| 'dark',
+
 				  symbol: getParameterByName('symbol') || "VNINDEX",
                 interval: getParameterByName('interval') || "D",
 		};
